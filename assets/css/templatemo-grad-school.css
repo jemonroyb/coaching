@@ -804,8 +804,8 @@ section.courses {
 }
 
 section.courses .item img {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
 }
 
 section.courses .item .down-content {

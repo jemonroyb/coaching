@@ -26,17 +26,8 @@
 	        0:{
 	            items:1
 	        },
-	        550:{
-	            items:2
-	        },
-	        750:{
-	            items:3
-	        },
-	        1000:{
-	            items:4
-	        },
 	        1200:{
-	            items:5
+	            items:2
 	        }
 	    }
 	})
@@ -91,6 +82,12 @@
 	  function initializeClock(endtime){
 	  var timeinterval = setInterval(function(){
 	    var t = getTimeRemaining(endtime);
+	    
+	    //document.querySelector(".days > .value").innerText=t.days;
+	    //document.querySelector(".hours > .value").innerText=t.hours;
+	    //document.querySelector(".minutes > .value").innerText=t.minutes;
+	    //document.querySelector(".seconds > .value").innerText=t.seconds;
+
 	    document.querySelector(".days > .value").innerText=t.days;
 	    document.querySelector(".hours > .value").innerText=t.hours;
 	    document.querySelector(".minutes > .value").innerText=t.minutes;
@@ -100,7 +97,8 @@
 	    }
 	  },1000);
 	}
-	initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+	var deadline = 'September 1 2022 00:00:00 GMT-5';
+	initializeClock(deadline)
 	})()
 
 })(jQuery);
